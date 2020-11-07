@@ -91,7 +91,7 @@ class HomePageHook extends HookWidget {
 class HomePageCustomHook extends HookWidget {
   @override
   Widget build(BuildContext context) {
-    final number = useInfiniteTimer(context);
+    final number = useInfiniteTimer();
 
     return Scaffold(
       appBar: AppBar(
@@ -107,7 +107,7 @@ class HomePageCustomHook extends HookWidget {
 class HomePageCustomHook2 extends HookWidget {
   @override
   Widget build(BuildContext context) {
-    final number = useInfiniteTimer(context);
+    final number = useInfiniteTimer();
     return Text(number.toString());
   }
 }
